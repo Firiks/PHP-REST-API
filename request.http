@@ -1,0 +1,30 @@
+GET http://localhost:8080/REST-API-PHP/api/posts/read.php HTTP/1.1
+
+###
+
+GET http://localhost:8080/REST-API-PHP/api/posts/read_single.php?id=1 HTTP/1.1
+
+###
+
+POST http://localhost:8080/REST-API-PHP/api/posts/create.php HTTP/1.1
+content-type: application/json
+
+{
+    "title": "My Tech Post",
+    "body": "This is a sample post",
+    "author": "Admin",
+    "category_id": "1"
+}
+
+###
+
+PUT http://localhost:8080/REST-API-PHP/api/posts/update.php HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Updated Post",
+    "body": "This is a updated post",
+    "author": "Admin",
+    "category_id": "1",
+    "id": "4"
+}
